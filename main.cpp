@@ -30,21 +30,22 @@ int main ()
         break;
     }
     Sleep(2000); //Allows to make delays between messages (milliseconds)
+    switch (randomize(1))
+    {
+    case 1:
+        cout<<"What do you want to find out about parachute systems today?"<<endl;
+        break;
+    }
+    Sleep(2000);
     for (;;)
     {
-        switch (randomize(1))
-        {
-        case 1:
-            cout<<"What do you want to find out about parachute systems today?"<<endl;
-            break;
-        }
-        Sleep(2000);
         switch (randomize(1))
         {
         case 1:
             cout<<"Select one of the variants of searching necessary information below by typing the number of this option from the"<<endl<<"keyboard."<<endl;
             break;
         }
+        //Some variants
         Sleep(2000);
         switch (randomize(1))
         {
@@ -59,6 +60,7 @@ int main ()
             system("cls"); //It clears the command line (cmd)
             break;
         }
+        //Choice
         system("cls");
     }
     Sleep(200);
