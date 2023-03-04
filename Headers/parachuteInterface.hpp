@@ -3,7 +3,9 @@
 class parachute
 {
 public:
-    void itWorks();
+    parachute();
+    virtual ~parachute();
+    void help();
 protected:
     string title;
     float area;
@@ -11,4 +13,8 @@ protected:
     float des_speed;
     int min_height;
     bool is_main;
+    bool forced_only;
+    float speed;
+    int round_time;
+    bool has_extra_safety;
 };

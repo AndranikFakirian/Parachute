@@ -3,8 +3,6 @@
 
 class uncontrolled:public main
 {
-protected:
-    float speed;
 public:
     uncontrolled();
 };

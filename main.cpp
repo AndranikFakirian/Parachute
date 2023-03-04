@@ -2,19 +2,8 @@
 using namespace std;
 //Function which returns a random integer number in the range from min to max (randomizer)
 //Can be useful in generating different phrases in each session
-#include <stdlib.h>
-#include <time.h>
 #include <windows.h>
-int randomize(int max, int min)
-{
-    srand(time(NULL));
-    return min+rand()%(max-min+1);
-}
-//Simplified randomizer with min argument equal to 1
-int randomize(int max)
-{
-    return randomize(max, 1);
-}
+#include "Global Functions/randomizer.cpp"
 
 #include "Classes/parachuteInterface.cpp"
 int main ()

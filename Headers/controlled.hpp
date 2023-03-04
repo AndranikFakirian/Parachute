@@ -3,9 +3,6 @@
 
 class controlled:public main
 {
-protected:
-    float speed;
-    int round_time;
 public:
     controlled();
 };
