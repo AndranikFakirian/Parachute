@@ -12,7 +12,7 @@ void St_2()
     for (;;)
     {
         cout<<"Enter the title of parachute system"<<endl;
-        cout<<"If you want to exit enter \"quit\""<<endl;
+        cout<<"If you want to exit enter \"quit\" or \"q\""<<endl;
         string a;
         char c[6];
         int len;
@@ -27,7 +27,7 @@ void St_2()
             c[i]=tolower(c[i]);
         }
         a=((string)c).substr(0, len+1);
-        if (a=="quit")
+        if ((a=="quit")||(a=="q"))
         {
             system("cls");
             break;

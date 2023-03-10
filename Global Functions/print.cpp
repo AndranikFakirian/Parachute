@@ -2,6 +2,7 @@
 #include "allincluded.cpp"
 void print(int i, parachute** l)
 {
+    system("cls");
     cout<<boolalpha;
     cout<<"Area "<<l[i].get_area()<<endl;
     cout<<"Weight "<<l[i].get_weight()<<endl;
@@ -26,4 +27,5 @@ void print(int i, parachute** l)
     {
         cout<<"Manual only "<<l[i].get_manual_only()<<endl;
     }
+    cout<<"If you want to exit enter \"quit\" or \"q\""<<endl;
 }
