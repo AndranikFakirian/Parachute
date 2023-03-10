@@ -97,7 +97,7 @@ int main ()
         }
         string a;
         cin>>a;
-        if ((a=="Quit")|(a=="quit")|(a=="Q")|(a=="q"))
+        if ((a=="Quit")||(a=="quit")||(a=="Q")||(a=="q"))
         {
             system("cls"); //It clears the command line (cmd)
             break;
