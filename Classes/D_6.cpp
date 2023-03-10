@@ -7,5 +7,5 @@ D_6::D_6()
     min_height=150;
     weight=12;
     des_speed=5;
-    title="D_6";
+    title="D-6";
 }

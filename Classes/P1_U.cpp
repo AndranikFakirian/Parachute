@@ -7,7 +7,7 @@ P1_U::P1_U()
     min_height=150;
     weight=11;
     des_speed=5;
-    title="P1_U";
+    title="P1-U";
     speed=3.3;
     round_time=12;
 }

@@ -9,5 +9,5 @@ Z_6P::Z_6P()
     des_speed=8;
     has_safety=true;
     has_spring=true;
-    title="Z_6P"
+    title="Z-6P"
 }

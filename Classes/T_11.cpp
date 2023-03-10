@@ -7,6 +7,6 @@ T_11::T_11()
     min_height=150;
     weight=17;
     des_speed=6;
-    title="T_11";
+    title="T-11";
     forced_only=true;
 }

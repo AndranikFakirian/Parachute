@@ -7,6 +7,6 @@ D_5::D_5()
     min_height=200;
     weight=13.8;
     des_speed=5;
-    title="D_5";
+    title="D-5";
     has_extra_safety=true;
 }

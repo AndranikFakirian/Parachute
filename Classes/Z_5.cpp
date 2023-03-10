@@ -7,5 +7,5 @@ Z_5::Z_5()
     min_height=100;
     weight=5.2;
     des_speed=7.5;
-    title="Z_5";
+    title="Z-5";
 }

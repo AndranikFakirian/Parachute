@@ -7,7 +7,7 @@ UT_15::UT_15()
     min_height=150;
     weight=12.3;
     des_speed=5.1;
-    title="UT_15";
+    title="UT-15";
     speed=5.1;
     round_time=5;
     manual_only=true;
