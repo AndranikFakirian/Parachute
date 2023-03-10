@@ -1,5 +1,5 @@
 #pragma once
-#include "Z_5"
+#include "Z_5.hpp"
 
 class Z_5_S4:public Z_5
 {
