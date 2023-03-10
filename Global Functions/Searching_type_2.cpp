@@ -12,11 +12,11 @@ void St_2()
     for (;;)
     {
         cout<<"Enter the title of parachute system"<<endl;
-        cout<<"If you want to exit enter \"exit\""<<endl;
+        cout<<"If you want to exit enter \"quit\""<<endl;
         string a;
         char c[6];
         int len;
-        for (int i=0;; i++)
+        for (int i=0;i<8;i++)
         {
             cin.get(c[i]);
             if (c[i]=='\n')
@@ -27,7 +27,7 @@ void St_2()
             c[i]=tolower(c[i]);
         }
         a=((string)c).substr(0, len+1);
-        if (a=="exit")
+        if (a=="quit")
         {
             system("cls");
             break;
@@ -52,12 +52,12 @@ void St_2()
             print(8,l);
         else if ((a=="z-5")||(a=="z5")||(a=="z_5")||(a=="z 5"))
             print(9,l);
-        else if ((a=="z-5-s4")||(a=="z5s4")||(a=="z_5_s4")||(a=="z 5 s4"))
+        else if ((a=="z-5-s4")||(a=="z5s4")||(a=="z_5_s4")||(a=="z 5 s4")||(a=="z5 s4"))
             print(10,l);
         else if ((a=="z-6p")||(a=="z6p")||(a=="z_6p")||(a=="z 6p"))
             print(11,l);
         else
             cout<<"Error: wrong title";
     }
-
+    del(l);
 };
