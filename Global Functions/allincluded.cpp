@@ -1,3 +1,5 @@
+#include <windows.h>
+#include "randomizer.cpp"
 #include "../Classes/D_5.cpp"
 #include "../Classes/D_6.cpp"
 #include "../Classes/D_10.cpp"

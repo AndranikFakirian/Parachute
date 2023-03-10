@@ -2,10 +2,11 @@
 using namespace std;
 //Function which returns a random integer number in the range from min to max (randomizer)
 //Can be useful in generating different phrases in each session
-#include <windows.h>
 #include "Global Functions/randomizer.cpp"
+#include "Global Functions/Searching_type_1.cpp"
+#include "Global Functions/Searching_type_2.cpp"
+#include "Global Functions/Searching_type_3.cpp"
 
-#include "Classes/parachuteInterface.cpp"
 int main ()
 {
     Sleep(200);
@@ -54,7 +55,33 @@ int main ()
             cout<<"Which method of searching necessary information do you want to use? Type the number of appropriate variant from the"<<endl<<"keyboard."<<endl;
             break;
         }
-        //Some variants
+        Sleep(200);
+        switch (randomize(2))
+        {
+        case 1:
+            cout<<"1. Searching in the list of titles of the parachute systems."<<endl;
+            break;
+        case 2:
+            cout<<"1. Searching by the title of the parachute system from the list."<<endl;
+            break;
+        }
+        Sleep(200);
+        switch (randomize(1))
+        {
+        case 1:
+            cout<<"2. Searching by the typed title of the parachute system."<<endl;
+            break;
+        }
+        Sleep(200);
+        switch (randomize(2))
+        {
+        case 1:
+            cout<<"3. Searching by the value of the parachute system parameter of interest."<<endl;
+            break;
+        case 2:
+            cout<<"3. Searching for parachute systems with the parachute system parameter closest to the entered value."<<endl;
+            break;
+        }
         Sleep(2000);
         switch (randomize(3))
         {
@@ -75,7 +102,18 @@ int main ()
             system("cls"); //It clears the command line (cmd)
             break;
         }
-        //Choice
+        switch (a) //Choice
+        {
+        case "1":
+            St_1();
+            break;
+        case "2":
+            St_2();
+            break;
+        case "3":
+            St_3();
+            break;
+        }
         system("cls");
         Sleep(200);
         switch (randomize(4))
