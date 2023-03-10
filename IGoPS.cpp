@@ -97,7 +97,8 @@ int main ()
         }
         string a;
         cin>>a;
-        if ((a=="Quit")|(a=="quit")|(a=="Q")|(a=="q"))
+        Sleep(200);
+        if ((a=="Quit")||(a=="quit")||(a=="Q")||(a=="q"))
         {
             system("cls"); //It clears the command line (cmd)
             break;
@@ -113,6 +114,15 @@ int main ()
         case "3":
             St_3();
             break;
+        }
+        if ((int(a)>3)|(int(a)<1))
+        {
+            switch (randomize(1))
+            {
+            case 1:
+                cout<<"Wrong number."<<endl;
+                break;
+            }
         }
         system("cls");
         Sleep(200);
