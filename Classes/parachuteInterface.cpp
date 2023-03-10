@@ -15,6 +15,7 @@ parachute::parachute() //Default (if variable appears in inheritors it gives an 
     has_extra_safety=false;
     manual_only=false;
     has_spring=false;
+    has_safety=true;
 }
 parachute::~parachute() {};
 void parachute::help()
@@ -68,4 +69,8 @@ bool parachute::get_manual_only()
 bool parachute::get_has_spring()
 {
     return has_spring;
+}
+bool parachute::get_has_safety()
+{
+    return has_safety;
 }

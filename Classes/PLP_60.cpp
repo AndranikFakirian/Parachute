@@ -7,5 +7,5 @@ PLP_60::PLP_60()
     min_height=60;
     weight=7.8;
     des_speed=6;
-    title="PLP_60";
+    title="PLP-60";
 }

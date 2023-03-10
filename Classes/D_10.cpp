@@ -7,5 +7,5 @@ D_10::D_10()
     min_height=200;
     weight=12;
     des_speed=5;
-    title="D_10";
+    title="D-10";
 }
