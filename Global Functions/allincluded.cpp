@@ -1,3 +1,4 @@
+#pragma once
 #include <windows.h>
 #include "randomizer.cpp"
 #include "../Classes/D_5.cpp"
