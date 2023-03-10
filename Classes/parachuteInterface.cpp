@@ -21,3 +21,51 @@ void parachute::help()
 {
         //Considering all parameters
 }
+string parachute::get_title()
+{
+    return title;
+}
+float parachute::get_area()
+{
+    return area;
+}
+float parachute::get_weight()
+{
+    return parachute::weight;
+}
+float parachute::get_des_speed()
+{
+    return des_speed;
+}
+int parachute::get_min_height()
+{
+    return min_height;
+}
+bool parachute::get_is_main()
+{
+    return is_main;
+}
+bool parachute::get_forced_only()
+{
+    return forced_only;
+}
+float parachute::get_speed()
+{
+    return speed;
+}
+int parachute::get_round_time()
+{
+    return round_time;
+}
+bool parachute::get_has_extra_safety()
+{
+    return has_extra_safety;
+}
+bool parachute::get_manual_only()
+{
+    return manual_only;
+}
+bool parachute::get_has_spring()
+{
+    return has_spring;
+}
