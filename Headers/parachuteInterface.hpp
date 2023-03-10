@@ -18,6 +18,7 @@ public:
     bool get_has_extra_safety();
     bool get_manual_only();
     bool get_has_spring();
+    bool get_has_safety();
 protected:
     string title;
     float area;
@@ -31,4 +32,5 @@ protected:
     bool has_extra_safety;
     bool manual_only;
     bool has_spring;
+    bool has_safety;
 };
