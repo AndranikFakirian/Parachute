@@ -1,5 +1,5 @@
 #pragma once
-#include "main.hpp"
+#include "../Classes/main.cpp"
 
 class uncontrolled:public main
 {

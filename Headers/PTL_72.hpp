@@ -1,5 +1,5 @@
 #pragma once
-#include "controlled.hpp"
+#include "../Classes/controlled.cpp"
 
 class PTL_72:public controlled
 {

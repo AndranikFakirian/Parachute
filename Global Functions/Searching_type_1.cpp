@@ -25,7 +25,7 @@ void St_1()
         for (int i=0; i<12; i++)
         {
             Sleep(200);
-            cout<<i<<". "<<p[i].get_title()<<";"<<endl;
+            cout<<i<<". "<<p[i]->get_title()<<";"<<endl;
         }
         Sleep(2000);
         switch (randomize(3))
@@ -81,13 +81,13 @@ void St_1()
                 }
             }
         }
-        else if ((int(a)<12)&(int(a)>0))
+        else if ((stoi(a)<12)&(stoi(a)>0))
         {
             Sleep(200);
             system("cls");
-            p[int(a)].help();
+            p[stoi(a)]->help();
             Sleep(200);
-            switch (randomize(3)))
+            switch (randomize(3))
             {
             case 1:
                 cout<<"When you finish reading the information press \"Enter\" to close help."<<endl;
@@ -101,7 +101,6 @@ void St_1()
             }
             char x;
             cin.get(x);
-            delete x;
             break;
         }
         else

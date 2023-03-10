@@ -103,19 +103,19 @@ int main ()
             system("cls"); //It clears the command line (cmd)
             break;
         }
-        switch (a) //Choice
+        switch (stoi(a)) //Choice
         {
-        case "1":
+        case 1:
             St_1();
             break;
-        case "2":
+        case 2:
             St_2();
             break;
-        case "3":
+        case 3:
             St_3();
             break;
         }
-        if ((int(a)>3)|(int(a)<1))
+        if ((stoi(a)>3)||(stoi(a)<1))
         {
             switch (randomize(1))
             {

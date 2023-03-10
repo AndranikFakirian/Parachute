@@ -8,7 +8,7 @@
 
 void St_2()
 {
-    parachute** l=create()
+    parachute** l=create();
     for (;;)
     {
         cout<<"Enter the title of parachute system"<<endl;

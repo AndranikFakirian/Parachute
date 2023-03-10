@@ -1,9 +1,11 @@
 #pragma once
+#include <iostream>
 #include <cstring>
+using namespace std;
 
 bool isNumber (string s)
 {
-    len=s.length();
+    int len=s.length();
     char* c=new char[len];
     strcpy(c, s.c_str());
     bool t=true;

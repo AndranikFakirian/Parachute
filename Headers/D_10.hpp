@@ -1,5 +1,5 @@
 #pragma once
-#include "uncontrolled.hpp"
+#include "../Classes/uncontrolled.cpp"
 
 class D_10:public uncontrolled
 {
