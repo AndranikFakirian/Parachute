@@ -17,4 +17,6 @@ protected:
     float speed;
     int round_time;
     bool has_extra_safety;
+    bool manual_only;
+    bool has_spring;
 };

@@ -13,6 +13,8 @@ parachute::parachute() //Default (if variable appears in inheritors it gives an 
     speed=-1;
     round_time=-1;
     has_extra_safety=false;
+    manual_only=false;
+    has_spring=false;
 }
 parachute::~parachute() {};
 void parachute::help()
