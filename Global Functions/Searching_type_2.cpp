@@ -57,7 +57,7 @@ void St_2()
         else if ((a=="z-6p")||(a=="z6p")||(a=="z_6p")||(a=="z 6p"))
             print(11,l);
         else
-            cout<<"Error: wrong title";
+            cout<<"Error: wrong title"<<endl<<"Please, try again";
     }
     del(l);
 };
