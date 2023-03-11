@@ -73,7 +73,7 @@ void St_1()
                     cout<<"Interactive Guide of Parachute Systems didn\'t manage to understand what you wrote."<<endl<<"Try to enter what you want correctly next time."<<endl;
                     break;
                 case 3:
-                    cout<<"Put a smarter ape behind this computer. Then try again to search for information about parachute systems."<<endl;
+                    cout<<"Interactive Guide of Parachute Systems is surrounded by brain donors on all sides."<<endl<<"Please put here not a brainless one and then try to find some information about parachute systems again."<<endl;;
                     break;
                 case 4:
                     cout<<"Interactive Guide of Parachute Systems doesn\'t have so much resources to decipher what you meant."<<endl<<"Try to make yourself clearer next time."<<endl;

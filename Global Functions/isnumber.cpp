@@ -13,5 +13,6 @@ bool isNumber (string s)
     {
         t=t&&isdigit(c[i]);
     }
+    delete [] c;
     return t;
 }

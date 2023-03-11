@@ -103,25 +103,54 @@ int main ()
             system("cls"); //It clears the command line (cmd)
             break;
         }
-        switch (stoi(a)) //Choice
+        else if (!isNumber(a))
         {
-        case 1:
-            St_1();
-            break;
-        case 2:
-            St_2();
-            break;
-        case 3:
-            St_3();
-            break;
-        }
-        if ((stoi(a)>3)||(stoi(a)<1))
-        {
-            switch (randomize(1))
+            switch (randomize(4))
             {
             case 1:
-                cout<<"Wrong number."<<endl;
+                cout<<"Please, clear the room of the corpse and put the next human being behind this computer. First make sure that it"<<endl<<"understands the words and the meaning of the sentences well. When you will do all this, let's continue searching"<<endl<<"for information about parachute systems."<<endl;
                 break;
+            case 2:
+                cout<<"Put a smarter ape behind this computer. Then try again to search for information about parachute systems."<<endl;
+                break;
+            case 3:
+                cout<<"Interactive Guide of Parachute Systems isn\'t interactive enough to understand every gibberish that you write."<<endl<<"Please, when you try to find information about parachute systems again, use common words."<<endl;
+                break;
+            case 4:
+                cout<<"The interactive guide to parachute systems cannot understand what you have written. Please explain yourself"<<endl<<"according to the simplest instructions next time."<<endl;
+                break;
+            }
+            Sleep(2000);
+        }
+        else
+        {
+            switch (stoi(a)) //Choice
+            {
+            case 1:
+                St_1();
+                break;
+            case 2:
+                St_2();
+                break;
+            case 3:
+                //St_3();
+                break;
+            }
+            if ((stoi(a)>3)||(stoi(a)<1))
+            {
+                switch (randomize(1))
+                {
+                case 1:
+                    cout<<"You wrote the wrong number, try to write it correctly next time."<<endl;
+                    break;
+                case 2:
+                    cout<<"The wrong number was dialed, next time enter the correct number."<<endl;
+                    break;
+                case 3:
+                    cout<<"Wrong number. Try again."<<endl;
+                    break;
+                }
+                Sleep(1000);
             }
         }
         system("cls");
