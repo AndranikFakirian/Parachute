@@ -84,7 +84,6 @@ void St_1()
         else if ((stoi(a)<12)&(stoi(a)>0))
         {
             Sleep(200);
-            system("cls");
             p[stoi(a)]->help();
             Sleep(200);
             switch (randomize(3))

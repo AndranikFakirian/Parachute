@@ -1,7 +1,7 @@
 #pragma once
 #include "../Headers/Z_5.hpp"
 
-Z_5::Z_5()
+Z_5::Z_5() //Has safety?
 {
     area=50;
     min_height=100;

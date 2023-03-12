@@ -18,10 +18,6 @@ parachute::parachute() //Default (if variable appears in inheritors it gives an 
     has_safety=true;
 }
 parachute::~parachute() {};
-void parachute::help()
-{
-        //Considering all parameters
-}
 string parachute::get_title()
 {
     return title;
@@ -73,4 +69,51 @@ bool parachute::get_has_spring()
 bool parachute::get_has_safety()
 {
     return has_safety;
+}
+void parachute::help()
+{
+    system("cls");
+    cout<<get_title()<<endl;
+    if (get_is_main())
+    {
+        cout<<"Main ";
+        if (get_speed()>0)
+        {
+            cout<<"controlled parachute system."<<endl;
+        }
+        else
+        {
+            cout<<"uncontrolled parachute system."<<endl;
+        }
+    }
+    else
+    {
+        cout<<"Reserve parachute system."<<endl;
+    }
+    cout<<"Characteristics:"<<endl;
+    cout<<"Area: "<<get_area()<<" m^2"<<endl;
+    cout<<"Weight: "<<get_weight()<<" kg"<<endl;
+    cout<<"Descent speed: "<<get_des_speed()<<" m/s"<<endl; //Decent speed? What is indecent speed? 3*10^8 m/s?
+    cout<<"Minimal height: "<<get_min_height()<<" m"<<endl;
+    if (get_speed()>0)
+    {
+        cout<<"Horizontal speed: "<<get_speed()<<" m/s"<<endl;
+        cout<<"The period of one turn: "<<get_round_time()<<" s"<<endl;
+    }
+    if (get_forced_only())
+    {
+        cout<<"Puts into effect automatically."<<endl;
+    }
+    if (!(get_is_main())&&(get_has_safety()))
+    {
+        cout<<"Has a safety device and a spring platform."<<endl;
+    }
+    if (get_has_extra_safety())
+    {
+        cout<<"Has an extra safety device."<<endl;
+    }
+    if (get_manual_only())
+    {
+        cout<<"Puts into effect only manually."<<endl;
+    }
 }

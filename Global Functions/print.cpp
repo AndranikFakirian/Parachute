@@ -3,7 +3,7 @@
 void print(int i, parachute** l)
 {
     system("cls");
-    cout<<boolalpha;
+    cout<<boolalpha; //Where did this variable appear from?
     cout<<"Area "<<l[i]->get_area()<<endl;
     cout<<"Weight "<<l[i]->get_weight()<<endl;
     cout<<"Decent speed "<<l[i]->get_des_speed()<<endl;
