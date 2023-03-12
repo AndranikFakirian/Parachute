@@ -25,7 +25,7 @@ void St_1()
         for (int i=0; i<12; i++)
         {
             Sleep(200);
-            cout<<i<<". "<<p[i]->get_title()<<";"<<endl;
+            cout<<i+1<<". "<<p[i]->get_title()<<";"<<endl;
         }
         Sleep(2000);
         switch (randomize(3))
@@ -81,11 +81,9 @@ void St_1()
                 }
             }
         }
-        else if ((stoi(a)<12)&(stoi(a)>0))
+        else if ((stoi(a)<13)&(stoi(a)>0))
         {
-            Sleep(200);
-            p[stoi(a)]->help();
-            Sleep(200);
+            p[stoi(a)-1]->help();
             switch (randomize(3))
             {
             case 1:
@@ -99,6 +97,7 @@ void St_1()
                 break;
             }
             char x;
+            cin.get(x);
             cin.get(x);
             break;
         }

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../Headers/parachuteInterface.hpp"
+#include <windows.h>
 parachute::parachute() //Default (if variable appears in inheritors it gives an error when you are trying to call it in ancestor's pointer
 {                       //on that inheritor (AB: public A, x' - variable which firstly appeared in AB => A *a=new AB(); a->x'=... //error))
     title="Parachute";
@@ -72,8 +73,10 @@ bool parachute::get_has_safety()
 }
 void parachute::help()
 {
+    Sleep(200);
     system("cls");
     cout<<get_title()<<endl;
+    Sleep(200);
     if (get_is_main())
     {
         cout<<"Main ";
@@ -90,30 +93,42 @@ void parachute::help()
     {
         cout<<"Reserve parachute system."<<endl;
     }
+    Sleep(200);
     cout<<"Characteristics:"<<endl;
+    Sleep(500);
     cout<<"Area: "<<get_area()<<" m^2"<<endl;
+    Sleep(200);
     cout<<"Weight: "<<get_weight()<<" kg"<<endl;
+    Sleep(200);
     cout<<"Descent speed: "<<get_des_speed()<<" m/s"<<endl; //Decent speed? What is indecent speed? 3*10^8 m/s?
+    Sleep(200);
     cout<<"Minimal height: "<<get_min_height()<<" m"<<endl;
+    Sleep(200);
     if (get_speed()>0)
     {
         cout<<"Horizontal speed: "<<get_speed()<<" m/s"<<endl;
+        Sleep(200);
         cout<<"The period of one turn: "<<get_round_time()<<" s"<<endl;
+        Sleep(200);
     }
     if (get_forced_only())
     {
         cout<<"Puts into effect automatically."<<endl;
+        Sleep(200);
     }
     if (!(get_is_main())&&(get_has_safety()))
     {
         cout<<"Has a safety device and a spring platform."<<endl;
+        Sleep(200);
     }
     if (get_has_extra_safety())
     {
         cout<<"Has an extra safety device."<<endl;
+        Sleep(200);
     }
     if (get_manual_only())
     {
         cout<<"Puts into effect only manually."<<endl;
+        Sleep(200);
     }
 }

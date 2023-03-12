@@ -46,13 +46,13 @@ int main ()
         switch (randomize(3))
         {
         case 1:
-            cout<<"Select one of the variants of searching necessary information below by typing the number of this option from the"<<endl<<"keyboard."<<endl;
+            cout<<"Select one of the variants of searching necessary information below by typing the number of this option from the"<<endl<<"keyboard:"<<endl;
             break;
         case 2:
-            cout<<"Choose the type of searching interested information by dialing the number of appropriate variant from the keyboard."<<endl;
+            cout<<"Choose the type of searching interested information by dialing the number of appropriate variant from the keyboard:"<<endl;
             break;
         case 3:
-            cout<<"Which method of searching necessary information do you want to use? Type the number of appropriate variant from the"<<endl<<"keyboard."<<endl;
+            cout<<"Which method of searching necessary information do you want to use? Type the number of appropriate variant from the"<<endl<<"keyboard:"<<endl;
             break;
         }
         Sleep(200);
