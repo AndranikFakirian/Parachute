@@ -164,7 +164,7 @@ int main ()
             cout<<"Wake up, user, we have the information about parachute systems to find."<<endl;
             break;
         case 3:
-            cout<<"What information about parachute systems do you learn?"<<endl;
+            cout<<"What information about parachute systems would you like to learn?"<<endl;
             break;
         case 4:
             cout<<"You need more things about parachute systems to know? The Interactive Guide of Parachute Systems at your service."<<endl;
