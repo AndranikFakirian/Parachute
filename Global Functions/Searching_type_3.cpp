@@ -10,8 +10,13 @@ void St_3()
     switch (randomize(1))
     {
     case 1:
-        cout<<"Which?"<<endl;
+        cout<<"Select the option of the parameter by the value of which you want to find the parachute system:"<<endl;
         break;
+    case 2:
+        cout<<"Here is the list of parameters."<<endl;
+        break;
+    case 3:
+        cout<<""<<endl;
     }
     cout<<"Main boolean values..."<<endl;
     cout<<"Numerical values..."<<endl;

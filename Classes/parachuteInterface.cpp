@@ -116,6 +116,16 @@ void parachute::help()
         cout<<"Puts into effect automatically."<<endl;
         Sleep(200);
     }
+    else if (get_manual_only())
+    {
+        cout<<"Puts into effect only manually."<<endl;
+        Sleep(200);
+    }
+    else
+    {
+        cout<<"Can be put into effect either manually or automatically."<<endl;
+        Sleep(200);
+    }
     if (!(get_is_main())&&(get_has_safety()))
     {
         cout<<"Has a safety device and a spring platform."<<endl;
@@ -124,11 +134,6 @@ void parachute::help()
     if (get_has_extra_safety())
     {
         cout<<"Has an extra safety device."<<endl;
-        Sleep(200);
-    }
-    if (get_manual_only())
-    {
-        cout<<"Puts into effect only manually."<<endl;
         Sleep(200);
     }
 }

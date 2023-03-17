@@ -4,4 +4,5 @@
 reserve::reserve()
 {
     is_main=false;
+    has_safety=false;
 }
