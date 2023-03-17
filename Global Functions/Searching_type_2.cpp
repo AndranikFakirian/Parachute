@@ -1,6 +1,5 @@
 #pragma once
 #include "allincluded.cpp"
-#include "print.cpp"
 #include <cctype>
 #include "titleconverter.cpp"
 
@@ -23,29 +22,29 @@ void St_2()
             break;
         }
         else if (a=="d6")
-            print(1,l);
+            l[1]->help();
         else if (a=="d5")
-            print(0,l);
+            l[0]->help();
         else if (a=="d10")
-            print(2,l);
+            l[2]->help();
         else if (a=="t11")
-            print(7,l);
+            l[7]->help();
         else if (a=="d15u")
-            print(3,l);
+            l[3]->help();
         else if (a=="p1u")
-            print(4,l);
+            l[4]->help();
         else if (a=="plp60")
-            print(5,l);
+            l[5]->help();
         else if (a=="ptl72")
-            print(6,l);
+            l[6]->help();
         else if (a=="ut15")
-            print(8,l);
+            l[8]->help();
         else if (a=="z5")
-            print(9,l);
+            l[9]->help();
         else if (a=="z5s4")
-            print(10,l);
+            l[10]->help();
         else if (a=="z6p")
-            print(11,l);
+            l[11]->help();
         else
             cout<<"Error: wrong title"<<endl<<"Please, try again";
     }

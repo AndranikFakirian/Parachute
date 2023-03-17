@@ -121,7 +121,7 @@ void parachute::help()
         cout<<"Puts into effect only manually."<<endl;
         Sleep(200);
     }
-    else
+    else if (get_is_main())
     {
         cout<<"Can be put into effect either manually or automatically."<<endl;
         Sleep(200);
