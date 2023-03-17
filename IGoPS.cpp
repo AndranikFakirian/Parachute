@@ -133,7 +133,7 @@ int main ()
                 St_2();
                 break;
             case 3:
-                //St_3();
+                St_3();
                 break;
             }
             if ((stoi(a)>3)||(stoi(a)<1))

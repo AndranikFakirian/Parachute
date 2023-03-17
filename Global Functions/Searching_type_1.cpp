@@ -64,7 +64,7 @@ void St_1()
             }
             else
             {
-                switch (randomize(1))
+                switch (randomize(4))
                 {
                 case 1:
                     cout<<"Did you just hit the keyboard with your face? Next time, write something more intelligible."<<endl;
