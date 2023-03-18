@@ -103,7 +103,7 @@ int main ()
             system("cls"); //It clears the command line (cmd)
             break;
         }
-        else if (!isNumber(a))
+        else if (isNumber(a)!=1)
         {
             switch (randomize(4))
             {
