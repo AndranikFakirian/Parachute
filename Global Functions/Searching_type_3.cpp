@@ -1,7 +1,15 @@
 #pragma once
-#include "allincluded.cpp"
-#include "randomizer.cpp"
-#include "isnumber.cpp"
+#include "Submethods of ST3/St_3_main_reserve.cpp"
+#include "Submethods of ST3/St_3_controlled_uncontrolled.cpp"
+#include "Submethods of ST3/St_3_area.cpp"
+#include "Submethods of ST3/St_3_weight.cpp"
+#include "Submethods of ST3/St_3_descent_speed.cpp"
+#include "Submethods of ST3/St_3_min_height.cpp"
+#include "Submethods of ST3/St_3_horizontal_speed.cpp"
+#include "Submethods of ST3/St_3_round_time.cpp"
+#include "Submethods of ST3/St_3_type_of_put.cpp"
+#include "Submethods of ST3/St_3_safety.cpp"
+#include "Submethods of ST3/St_3_extra_safety.cpp"
 
 void St_3()
 {
@@ -102,26 +110,37 @@ void St_3()
             switch (stoi(a))
             {
             case 1:
+                main_reserve_search();
                 break;
             case 2:
+                controlled_uncontrolled_search();
                 break;
             case 3:
+                area_search();
                 break;
             case 4:
+                weight_search();
                 break;
             case 5:
+                descent_speed_search();
                 break;
             case 6:
+                min_height_search();
                 break;
             case 7:
+                horizontal_speed_search();
                 break;
             case 8:
+                round_time_search();
                 break;
             case 9:
+                type_of_put_search();
                 break;
             case 10:
+                safety_search();
                 break;
             case 11:
+                extra_safety_search();
                 break;
             }
         }
