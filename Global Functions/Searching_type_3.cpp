@@ -79,6 +79,7 @@ void St_3()
         }
         string a;
         cin>>a;
+        Sleep(200);
         if (isNumber(a)!=1)
         {
             if ((a=="Quit")||(a=="quit")||(a=="Q")||(a=="q"))

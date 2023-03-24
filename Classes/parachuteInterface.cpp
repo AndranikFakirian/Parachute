@@ -75,6 +75,7 @@ void parachute::help()
 {
     Sleep(200);
     system("cls");
+    Sleep(200);
     cout<<get_title()<<endl;
     Sleep(200);
     if (get_is_main())

@@ -37,6 +37,7 @@ void St_2()
         }
         string a;
         cin>>a;
+        Sleep(200);
         if (a.length()>7)
         {
             switch (randomize(1))
