@@ -10,7 +10,7 @@ void main_reserve_search()
     {
         system("cls");
         Sleep(200);
-        switch (randomize(1))
+        switch (randomize(3))
         {
         case 1:
             cout<<"Type the number of option with interested feature of parachute systems to search for appropriate ones:"<<endl;
