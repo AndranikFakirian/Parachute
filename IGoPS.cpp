@@ -120,7 +120,7 @@ int main ()
                 cout<<"The interactive guide to parachute systems cannot understand what you have written. Please explain yourself"<<endl<<"according to the simplest instructions next time."<<endl;
                 break;
             }
-            Sleep(2000);
+            Sleep(5000);
         }
         else
         {
@@ -150,7 +150,7 @@ int main ()
                     cout<<"Wrong number. Try again."<<endl;
                     break;
                 }
-                Sleep(1000);
+                Sleep(2000);
             }
         }
         system("cls");

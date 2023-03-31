@@ -44,6 +44,7 @@ void main_reserve_search()
                 cout<<"Looking at you Interactive Guide of Parachute Systems realizes why some people share the idea of issuing human"<<endl<<"reproduction permits. Please, try again and enter correctly what you wanted."<<endl;
                 break;
             }
+            Sleep(3000);
         }
         else if ((stoi(a)>0)&&(stoi(a)<3))
         {
@@ -120,7 +121,7 @@ void main_reserve_search()
                 break;
             }
         }
-        Sleep(1000);
+        Sleep(2000);
     }
     del(p);
 }

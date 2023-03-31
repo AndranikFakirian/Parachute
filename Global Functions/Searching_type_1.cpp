@@ -79,6 +79,7 @@ void St_1()
                     cout<<"Interactive Guide of Parachute Systems doesn\'t have so much resources to decipher what you meant."<<endl<<"Try to make yourself clearer next time."<<endl;
                     break;
                 }
+                Sleep(3000);
             }
         }
         else if ((stoi(a)<13)&(stoi(a)>0))
@@ -116,7 +117,7 @@ void St_1()
                 break;
             }
         }
-        Sleep(1000);
+        Sleep(2000);
     }
 
     system("cls");

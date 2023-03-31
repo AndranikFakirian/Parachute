@@ -109,7 +109,7 @@ void St_2()
                 }
             }
         }
-        Sleep(1000);
+        Sleep(2000);
     }
     system("cls");
     del(p);

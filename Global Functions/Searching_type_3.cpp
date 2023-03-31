@@ -104,6 +104,7 @@ void St_3()
                     cout<<"Mistake. Realize. Correct. Repeat."<<endl;
                     break;
                 }
+                Sleep(3000);
             }
         }
         else if ((stoi(a)<12)&(stoi(a)>0))
@@ -160,6 +161,6 @@ void St_3()
                 break;
             }
         }
-        Sleep(1000);
+        Sleep(2000);
     }
 }
