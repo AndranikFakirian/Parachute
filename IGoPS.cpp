@@ -5,7 +5,7 @@ using namespace std;
 #include "Global Functions/randomizer.cpp"
 #include "Global Functions/Searching_type_1.cpp"
 #include "Global Functions/Searching_type_2.cpp"
-//#include "Global Functions/Searching_type_3.cpp"
+#include "Global Functions/Searching_type_3.cpp"
 
 int main ()
 {
@@ -133,7 +133,7 @@ int main ()
                 St_2();
                 break;
             case 3:
-                //St_3();
+                St_3();
                 break;
             }
             if ((stoi(a)>3)||(stoi(a)<1))

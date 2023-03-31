@@ -14,9 +14,9 @@ void weight_search()
         cout<<"Please, enter weight value you want to find"<<endl;
         string a;
         cin>>a;
-        int v=stoi(a);
+        int v=stof(a);
         Sleep(200);
-        if (isNumber(a)!=1)
+        if (isNumber(a)==0)
         {
             cout<<"Really?"<<endl;
         }
@@ -24,22 +24,21 @@ void weight_search()
         {
             system("cls");
             Sleep(200);
-            parac_param <int>l[12];
+            parac_param <float>l[12];
             for (int i=0; i<12; i++)
             {
                 l[i].Num=i;
                 l[i].val=abs((p[i]->get_weight())-v);
             }
-            combSort(l, v);
-            if (l[0]<=5)
+            combSort(l, 12);
+            if (l[0].val<=5)
             {
-                for (int i=0; (i<3) && (p[i]<=5); i++)
+                for (int i=0; (i<3) && (l[i].val<=5); i++)
                 {
-                    cout<<i+1<<". "<<p[i]->get_title()<<endl;
+                    cout<<i+1<<". "<<p[(l[i].Num)]->get_title()<<endl;
                 }
                 Sleep(200);
                 cout<<"When you finish reading the information press \"Enter\" to close help."<<endl;
-                del[] l;
                 char x;
                 cin.get(x);
                 cin.get(x);
@@ -47,10 +46,10 @@ void weight_search()
             }
             else
             {
-                del[] l;
                 cout<<"No close values found."<<endl;
                 break;
             }
+            delete[] l;
         }
         Sleep(1000);
     }
