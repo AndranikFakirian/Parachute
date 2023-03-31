@@ -19,8 +19,8 @@ void extra_safety_search()
             cout<<"With what feature are you looking for parachute systems? Dial the number of appropriate option."<<endl;
             break;
         }
-        cout<<"1. Controlled;"<<endl;
-        cout<<"2. Uncontrolled;"<<endl;
+        cout<<"1. Has an extra safety device;"<<endl;
+        cout<<"2. Doesn\'t have an extra safety device;"<<endl;
         string a;
         cin>>a;
         Sleep(200);
@@ -49,13 +49,13 @@ void extra_safety_search()
             switch (randomize(3))
             {
             case 1:
-                cout<<"Note: Only the main parachute systems can be characterized as controlled or uncontrolled."<<endl;
+                cout<<"Note: Only the main parachute systems can have an extra safety device."<<endl;
                 break;
             case 2:
-                cout<<"Note: Only the main parachute systems are characterized as controlled or uncontrolled."<<endl;
+                cout<<"Note: Only the main parachute systems can be characterized as having an extra safety device."<<endl;
                 break;
             case 3:
-                cout<<"Note: Reserve parachute systems cannot be characterized as controlled or uncontrolled."<<endl;
+                cout<<"Note: Reserve parachute systems cannot be characterized as having an extra safety device."<<endl;
                 break;
             }
             if (stoi(a)==1)
@@ -63,13 +63,13 @@ void extra_safety_search()
                 switch (randomize(3))
                 {
                 case 1:
-                    cout<<"Here is a list of controlled parachute systems:"<<endl;
+                    cout<<"Here is a list of parachute systems equipped with an extra safety device:"<<endl;
                     break;
                 case 2:
-                    cout<<"Here it is. List of controlled parachute systems:"<<endl;
+                    cout<<"Here it is. List of parachute systems equipped with an extra safety device:"<<endl;
                     break;
                 case 3:
-                    cout<<"Here, as ordered. List of controlled parachute systems:"<<endl;
+                    cout<<"Here, as ordered. List of parachute systems equipped with an extra safety device:"<<endl;
                     break;
                 }
             }
@@ -78,19 +78,19 @@ void extra_safety_search()
                 switch (randomize(3))
                 {
                 case 1:
-                    cout<<"Here is a list of uncontrolled parachute systems:"<<endl;
+                    cout<<"Here is a list of parachute systems which aren\'t equipped with an extra safety device:"<<endl;
                     break;
                 case 2:
-                    cout<<"Here it is. List of uncontrolled parachute systems:"<<endl;
+                    cout<<"Here it is. List of parachute systems which aren\'t equipped with an extra safety device:"<<endl;
                     break;
                 case 3:
-                    cout<<"Here, as ordered. List of uncontrolled parachute systems:"<<endl;
+                    cout<<"Here, as ordered. List of parachute systems which aren\'t equipped with an extra safety device:"<<endl;
                     break;
                 }
             }
             for (int i=0; i<12; i++)
             {
-                if ((p[i]->get_speed()==0)==(stoi(a)==2))
+                if ((p[i]->get_has_extra_safety())==(stoi(a)==1))
                 {
                     Sleep(200);
                     cout<<i<<". "<<p[i]->get_title()<<";"<<endl;
