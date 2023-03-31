@@ -62,6 +62,7 @@ void controlled_uncontrolled_search()
                 cout<<"Note: Reserve parachute systems cannot be characterized as controlled or uncontrolled."<<endl;
                 break;
             }
+            Sleep(1000);
             if (stoi(a)==1)
             {
                 switch (randomize(3))

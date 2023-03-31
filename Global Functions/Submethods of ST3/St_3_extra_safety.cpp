@@ -59,6 +59,7 @@ void extra_safety_search()
                 cout<<"Note: Reserve parachute systems cannot be characterized as having an extra safety device."<<endl;
                 break;
             }
+            Sleep(1000);
             if (stoi(a)==1)
             {
                 switch (randomize(3))

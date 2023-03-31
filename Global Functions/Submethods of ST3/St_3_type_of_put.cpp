@@ -60,6 +60,7 @@ void type_of_put_search()
                 cout<<"Note: Reserve parachute systems cannot be characterized by various ways of putting into effect."<<endl;
                 break;
             }
+            Sleep(1000);
             if (stoi(a)==1)
             {
                 switch (randomize(3))

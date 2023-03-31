@@ -59,6 +59,7 @@ void safety_search()
                 cout<<"Note: Only reserve parachute systems don\'t all have a safety device."<<endl;
                 break;
             }
+            Sleep(1000);
             if (stoi(a)==1)
             {
                 switch (randomize(3))
@@ -91,7 +92,7 @@ void safety_search()
             }
             for (int i=0; i<12; i++)
             {
-                if ((!p[i]->is_main())&&((p[i]->get_has_safety())==(stoi(a)==1)))
+                if ((!p[i]->get_is_main())&&((p[i]->get_has_safety())==(stoi(a)==1)))
                 {
                     Sleep(200);
                     cout<<i<<". "<<p[i]->get_title()<<";"<<endl;
