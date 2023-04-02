@@ -90,12 +90,14 @@ void safety_search()
                     break;
                 }
             }
+            int j=0;
             for (int i=0; i<12; i++)
             {
                 if ((!p[i]->get_is_main())&&((p[i]->get_has_safety())==(stoi(a)==1)))
                 {
                     Sleep(200);
-                    cout<<i<<". "<<p[i]->get_title()<<";"<<endl;
+                    j++;
+                    cout<<j<<". "<<p[i]->get_title()<<";"<<endl;
                 }
             }
             Sleep(200);

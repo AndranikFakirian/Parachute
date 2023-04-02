@@ -145,6 +145,7 @@ void St_3()
                 extra_safety_search();
                 break;
             }
+            break;
         }
         else
         {

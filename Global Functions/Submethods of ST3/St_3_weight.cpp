@@ -3,6 +3,7 @@
 #include "../allincluded.cpp"
 #include "../randomizer.cpp"
 #include "../isnumber.cpp"
+#include <cmath>
 
 void weight_search()
 {
@@ -26,8 +27,8 @@ void weight_search()
         string a;
         cin>>a;
         Sleep(200);
-        int isNumber=isNumber(a);
-        if (isNumber==0)
+        int Number=isNumber(a);
+        if (Number==0)
         {
             switch (randomize(4))
             {
@@ -47,7 +48,7 @@ void weight_search()
         }
         else
         {
-            if (isNumber==3)
+            if (Number==3)
             {
                 a=fl(a);
             }
@@ -139,7 +140,3 @@ void weight_search()
     }
     del(p);
 };
-
-
-
-

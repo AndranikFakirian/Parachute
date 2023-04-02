@@ -95,10 +95,12 @@ void controlled_uncontrolled_search()
             }
             for (int i=0; i<12; i++)
             {
+                int j=0;
                 if ((p[i]->get_speed()==0)==(stoi(a)==2))
                 {
                     Sleep(200);
-                    cout<<i<<". "<<p[i]->get_title()<<";"<<endl;
+                    j++;
+                    cout<<j<<". "<<p[i]->get_title()<<";"<<endl;
                 }
             }
             Sleep(200);
